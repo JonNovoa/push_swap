@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jon <jon@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: jnovoa-a <jnovoa-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 12:34:04 by jon               #+#    #+#             */
-/*   Updated: 2025/07/21 14:31:29 by jon              ###   ########.fr       */
+/*   Updated: 2025/07/21 18:35:56 by jnovoa-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,11 @@ typedef struct s_node
 	struct s_node	*next;
 }	t_node;
 
-void	free_stack(void);
+t_node	*new_node(int value);
+void	add_back(t_node **stack, t_node *new);
+long	ft_atol(const char *str);
+int		is_numeric(char *s);
+t_node	*parse_args(int argc, char **argv);
+void	free_stack(t_node **stack);
 void	exit_error(void);
-int		is_sorted(t_node *stack);
-
 #endif

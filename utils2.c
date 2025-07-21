@@ -1,25 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   utils2.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jnovoa-a <jnovoa-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/21 14:50:08 by jon               #+#    #+#             */
-/*   Updated: 2025/07/21 18:31:30 by jnovoa-a         ###   ########.fr       */
+/*   Created: 2025/07/21 18:22:33 by jnovoa-a          #+#    #+#             */
+/*   Updated: 2025/07/21 18:31:17 by jnovoa-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "push_swap.h"
 
-int	main(int argc, char **argv)
+void	free_stack(t_node **stack)
 {
-	t_node	*a;
+	t_node	*tmp;
 
-	if (argc < 2)
-		return (0);
-	a = parse_args(argc, argv);
-	free_stack(&a);
-	return (0);
+	if (!stack)
+		return ;
+	while (*stack)
+	{
+		tmp = (*stack)->next;
+		free(*stack);
+		*stack = tmp;
+	}
+}
+
+void	exit_error(void)
+{
+	write(2, "Error\n", 6);
+	exit(1);
 }

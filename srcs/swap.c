@@ -6,7 +6,7 @@
 /*   By: jnovoa-a <jnovoa-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 17:52:25 by jnovoa-a          #+#    #+#             */
-/*   Updated: 2025/07/30 19:05:11 by jnovoa-a         ###   ########.fr       */
+/*   Updated: 2025/08/01 19:41:09 by jnovoa-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ void	sb(t_stack *b)
 	swap(b);
 	print_instruction("sb");
 }
-
 
 void	ss(t_stack *a, t_stack *b)
 {

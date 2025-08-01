@@ -6,7 +6,7 @@
 /*   By: jnovoa-a <jnovoa-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 13:22:24 by jnovoa-a          #+#    #+#             */
-/*   Updated: 2025/07/30 14:08:13 by jnovoa-a         ###   ########.fr       */
+/*   Updated: 2025/08/01 18:54:35 by jnovoa-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,5 +58,9 @@ void	print_instruction(char *instr);
 /* Sorting */
 void	sort_small(t_stack *a, t_stack *b);
 void	push_swap(t_stack *a, t_stack *b);
+void	sort_two(t_stack *a);
+void	sort_three(t_stack *a);
+void	sort_five(t_stack *a, t_stack *b);
+
 
 #endif

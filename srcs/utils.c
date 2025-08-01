@@ -6,7 +6,7 @@
 /*   By: jnovoa-a <jnovoa-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 13:59:08 by jnovoa-a          #+#    #+#             */
-/*   Updated: 2025/07/30 14:12:18 by jnovoa-a         ###   ########.fr       */
+/*   Updated: 2025/08/01 19:47:03 by jnovoa-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	exit_error(t_stack *a, t_stack *b)
 	exit(EXIT_FAILURE);
 }
 
-void	print_instruccion(char *instr)
+void	print_instrucion(char *instr)
 {
 	while (instr)
 		write(1, instr++, 1);
